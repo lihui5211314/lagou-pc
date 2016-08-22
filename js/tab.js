@@ -366,6 +366,16 @@ var tab = (function () {
 
     }
 
+    function changeBtn(){
+        var bigBox = document.getElementById('bigBox'),
+            changeBtn=document.getElementById('changeBtn');
+        changeBtn.onclick=function(e){
+            e = e || window.event;
+            bigBox.style.display='block';
+            e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+            changeCity();
+        }
+    }
 
 
     return {
@@ -376,7 +386,8 @@ var tab = (function () {
         backTop:backTop,
         upOff:upOff,
         scrollTop:scrollTop,
-        changeCity:changeCity
+        changeCity:changeCity,
+        changeBtn:changeBtn
     }
 
 })();
