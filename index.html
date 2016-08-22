@@ -1463,6 +1463,37 @@
 
     </div>
 </div>
+
+<!--切换城市遮罩层-->
+<div class="bigBox clearfix" id="bigBox">
+    <div class="background"></div>
+    <div class="changeCity" id="changeCity">
+        <div class="border"></div>
+        <div class="head">
+            <span class="change">切换城市</span>
+            <i class="close" id="close"></i>
+        </div>
+        <div class="changeBox" >
+            <div class="content">
+                <strong>亲爱的用户您好</strong>
+                <p>切换城市分站，让我们为您提供更准确的职位信息。</p>
+            </div>
+            <p class="in">点击进入
+                <a class="beijing" href="javascript:;">北京站</a>or 切换到以下城市
+            </p>
+            <ul class="list clearfix">
+                <li><a href="javascript:;">全国站</a></li>
+                <li><a href="javascript:;">上海站</a></li>
+                <li><a href="javascript:;">杭州站</a></li>
+                <li><a href="javascript:;">广州站</a></li>
+                <li><a href="javascript:;">深圳站</a></li>
+                <li><a href="javascript:;">成都站</a></li>
+            </ul>
+            <p class="other">其他城市正在开通中，敬请期待～</p>
+        </div>
+    </div>
+</div>
+
 <script src="js/utils.js"></script>
 <script src="js/move.js"></script>
 <script src="js/tab.js"></script>
@@ -1475,10 +1506,13 @@
     tab.backTop();
     tab.upOff();
     tab.scrollTop();
+    tab.changeCity();
+
     var login=document.getElementById("login");
     login.onclick=function(){
         window.open('login.html');
-    }
+    };
+
 
 
     /*

@@ -237,6 +237,7 @@ var tab = (function () {
                 backTop.style.display='none';
             }else{
                 backTop.style.display='block';
+                backTop.className='backTop';
             }
         }
 
@@ -321,7 +322,7 @@ var tab = (function () {
                 }
             }
         }
-        /*չ����ҳ���ܸ߶�2919��δչ��2941*/
+
         linkBox.onclick=function(){
             utils.css('height',utils.win('scrollHeight'));
             footBar.style.position='relative';
@@ -344,6 +345,28 @@ var tab = (function () {
 
     }
 
+    //切换城市遮罩层
+    function changeCity() {
+        var bigBox = document.getElementById('bigBox'),
+            close = document.getElementById('close'),
+            changeCity = document.getElementById('changeCity');
+        document.documentElement.onclick = function () {
+            bigBox.style.display = 'none';
+        };
+        changeCity.onclick = function (e) {
+            e = e || window.event;
+            e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+            bigBox.style.display = 'block';
+        };
+        close.onclick = function (e) {
+            e = e || window.event;
+            e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+            bigBox.style.display = 'none';
+        };
+
+    }
+
+
 
     return {
         select: select,
@@ -352,7 +375,8 @@ var tab = (function () {
         moveAll: moveAll,
         backTop:backTop,
         upOff:upOff,
-        scrollTop:scrollTop
+        scrollTop:scrollTop,
+        changeCity:changeCity
     }
 
 })();

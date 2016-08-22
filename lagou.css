@@ -30,7 +30,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
-/*--------------------------------------------ÉÏbanner¹ã¸æÎ»*/
+/*--------------------------------------------ï¿½ï¿½bannerï¿½ï¿½ï¿½Î»*/
 .topBanner a {
     display: block;
     height: 80px;
@@ -42,7 +42,7 @@ html,body{
     height: 80px;
 }
 
-/*--------------------------------------------ºÚÉ«header*/
+/*--------------------------------------------ï¿½ï¿½É«header*/
 .header {
     height: 30px;
     background: #333;
@@ -163,7 +163,7 @@ html,body{
     height: 16px;
 }
 
-/*´Ë´¦µÄhoverĞ§¹û¿ÉÒÔÓÉjsÊµÏÖ£¬µ±mouseover liÊ±£¬¸øliÌí¼ÓÀàÃûselect*/
+/*ï¿½Ë´ï¿½ï¿½ï¿½hoverĞ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jsÊµï¿½Ö£ï¿½ï¿½ï¿½mouseover liÊ±ï¿½ï¿½ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½select*/
 /*.title .nav li:hover a{*/
 /*border-bottom: 2px solid #a8d494;*/
 /*color: #333;*/
@@ -181,7 +181,7 @@ html,body{
     margin: 35px auto 0;
 }
 
-/*<!--×óbanner-------------->*/
+/*<!--ï¿½ï¿½banner-------------->*/
 .box .barLeft {
     float: left;
     width: 230px;
@@ -374,7 +374,7 @@ html,body{
 
 }
 
-/*<!------------- ËÑË÷¿ò------------>*/
+/*<!------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½------------>*/
 .barRight{
     margin-left: 50px;
     float: left;
@@ -742,7 +742,7 @@ html,body{
     margin: 8px 14px 0 0;
 
 }
-/**********²é¿´¸ü¶à**************/
+/**********æ›´å¤š**************/
 .more{
     height: 97px;
     border-bottom: 1px solid #ececed;
@@ -772,7 +772,7 @@ html,body{
     margin:7px 13px 0 0;
     vertical-align: middle;
 }
-/*----------------ÓÑÇéÁ´½Ó-----------------*/
+/*----------------å‹æƒ…é“¾æ¥-----------------*/
 .linkBox{
     padding-top:15px;
     height: 31px;
@@ -841,7 +841,7 @@ html,body{
 /*.linkBox .off i.bg{*/
     /*transform: rotate(180deg);*/
 /*}*/
-/*---------- µ×²¿µÇÂ¼Ìõ-----------*/
+/*---------- ï¿½×²ï¿½ï¿½ï¿½Â¼ï¿½ï¿½-----------*/
 /*.fixAll{
     position: relative;
 }*/
@@ -963,7 +963,7 @@ html,body{
     width: 119px;
     height: 24px;
 }
-/*------------ »Øµ½¶¥²¿------------*/
+/*------------ ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½------------*/
 .back{
     width: 50px;
     height: 50px;
@@ -1016,7 +1016,7 @@ html,body{
     text-align: center;
 
 }
-/*-------------×îµ×²¿-------------*/
+/*-------------ï¿½ï¿½×²ï¿½-------------*/
 .footer{
     min-width: 1024px;
     background-color: #fff;
@@ -1104,7 +1104,146 @@ html,body{
     vertical-align: middle;
     display: inline-block;
 }
-/*-------------login------------*/
+
+/*--------åŠ è½½å®Œé¡µé¢å¼¹å‡ºçš„åŸå¸‚æ¡†---------*/
+.bigBox{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    cursor: pointer;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    z-index: 100;
+
+}
+.changeCity{
+    top: 100px;
+    left: 411px;
+    position: absolute;
+    width: 502px;
+    height: 484px;
+    background: #fff;
+    z-index: 102;
+}
+.changeCity .border{
+    top: -13px;
+    left: -13px;
+    position: absolute;
+    width: 502px;
+    height: 484px;
+    border: 13px solid rgba(88,88,88,.5);
+    z-index: -1;
+}
+.changeCity .head{
+
+    color: #fff;
+    background: #00b38a;
+    height: 44px;
+    width: 100%;
+    line-height: 44px
+}
+.head .change{
+    display: inline-block;
+    font-size: 18px;
+    text-indent: 16px;
+    float:left;
+
+}
+.head .close{
+    float: right;
+    background: url("images/controls_0ff2d3e.png")no-repeat;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    margin: 12px 12px 0 0;
+    cursor: pointer;
+}
+.changeCity .changeBox{
+    width: 422px;
+    padding: 30px 40px;
+    color: #555;
+}
+.changeBox .content{
+    border-bottom: 1px dotted #e5e5e5;
+}
+.content strong{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 16px;
+    color: #555;
+    line-height: 42px;
+    margin: 0 0 25px;
+}
+.changeBox .in{
+    margin: 26px 0 14px;
+}
+.changeBox .beijing{
+    border: 2px solid #00b38a;
+    color: #555;
+    width: 98px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.changeBox a{
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    color: #999;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #dce4e6;
+    border-radius: 1px;
+}
+.list{
+    padding-left: 24px;
+
+}
+.list li{
+    float: left;
+    width: 102px;
+    margin: 15px 12px;
+    cursor: pointer;
+
+}
+.list li:hover a{
+    border: 2px solid #00b38a;
+    width: 98px;
+    height: 48px;
+    color: #555;
+    text-align: center;
+    line-height: 48px;
+}
+.changeBox .other{
+    color: #777;
+    font-size: 14px;
+    margin: 14px 0 0;
+}
+
+
+
+
+
+/*-------------loginé¡µé¢------------*/
 .header2{
     position: relative;
     width: 100%;
